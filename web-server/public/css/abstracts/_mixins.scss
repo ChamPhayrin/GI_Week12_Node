@@ -1,0 +1,13 @@
+
+
+@mixin flexbox ($justify: center, $align: center, $direction: row){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  align-content: $align;
+  flex-direction: $direction;
+}
+
+@mixin displayNone(){
+  display: none;
+}

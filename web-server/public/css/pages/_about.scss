@@ -1,0 +1,29 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+
+
+#about-container{
+  width: 70%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.547);
+  min-height: toRem(300);
+  @include flexbox(center,center, column);
+  border-radius: toRem(10);
+  backdrop-filter: blur(10px);
+  #about-header{
+    @include flexbox(space-evenly, center, row);
+    h2{
+      font-size: toRem(30);
+      padding-bottom: toRem(30);
+      }
+      .line {
+        display: inline-block;
+        width: toRem(250);
+        height: toRem(1);
+        background-color: #987;
+        vertical-align: middle;
+      }
+    }
+  }

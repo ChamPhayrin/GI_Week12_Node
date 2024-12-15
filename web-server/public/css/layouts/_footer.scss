@@ -1,0 +1,49 @@
+@use '../abstracts/mixins' as *;
+
+footer{
+  height: 10vh;
+  @include flexbox(space-evenly, center, row);
+  width: 100%;
+  background-color: rgb(237, 245, 255);
+
+  h2{
+    font-weight: bold;
+    font-size: toRem(14);
+    text-transform: uppercase;
+    color: #031D44;
+    opacity: 0.75;
+    padding: toRem(20) 0;
+    margin: 0 toRem(20);
+  }
+  .footer-social-container{
+  width: 8%;
+    ul{
+      @include flexbox(space-evenly, center, row);
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          i{
+            padding: toRem(20) 0;
+            margin: 0 toRem(20);
+            opacity: 0.75;
+            font-size: 30px;
+            color: #031D44;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  footer{
+    @include flexbox(center, center, column);
+    .footer-social-container{
+      width: 100%;
+    }
+  }
+}

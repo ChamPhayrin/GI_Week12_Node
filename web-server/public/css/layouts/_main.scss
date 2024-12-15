@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as *;
+
+.container{
+  margin: 0 auto;
+  padding: 0;
+  min-height: 80vh;
+  height: auto;
+  width: 100%;
+  height: auto;
+  @include flexbox(center, center, column);
+  position: relative;
+  padding-bottom: 2.5rem;
+  background-color: rgba(57, 75, 136, 0.402);
+}

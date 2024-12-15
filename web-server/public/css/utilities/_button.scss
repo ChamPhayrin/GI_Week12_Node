@@ -1,0 +1,21 @@
+
+@use '../abstracts/mixins' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *; 
+
+button{
+  padding: toRem(10) toRem(15);
+  border: none;
+  outline: none;
+  background-color: rgb(237, 245, 255);
+  color: rgb(0, 0, 0);
+  border-radius: toRem(7);
+  font-weight: 600;
+  margin: toRem(10) toRem(5) toRem(0) toRem(10);
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  box-shadow: 6px 6px 2px 1px rgba(#031D44, .15);
+  &:hover{
+    transform: translateY(-3px);
+  }
+}

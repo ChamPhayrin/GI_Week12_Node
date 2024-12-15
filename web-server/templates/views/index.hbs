@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/img/weather.png">
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://kit.fontawesome.com/5e3005e55e.js" crossorigin="anonymous"></script>
+  {{>title}}
+</head>
+<body>
+  {{>navbar}}
+  
+  <main class="container">
+    <section id="weather-container">
+    <div id="weather-container-form">
+      <h2>Get weather for location here!</h2>
+      <form id="weather-form">
+        <div id="weather-form-input">
+          <label for="search-box" name="search-box">{{paragraph}}</label>
+          <input name="search-box" id='search-box' type="text" placeholder="Location">
+          <button type="submit" id="submit-btn">Search</button>
+        </div>
+        <div id="weather-form-input-units">
+          <div>
+            <input class="checkbox" type="checkbox" name="unit" value="f" id="farenheit" checked="checked">
+            <label for="farenheit">farenheit</label>
+          </div>
+          <div>
+            <input class="checkbox" type="checkbox" name="unit" value="m" id="metric">
+            <label for="metric">metric</label>
+          </div>
+          <div>
+            <input class="checkbox" type="checkbox" name="unit" value="s" id="scientific">
+            <label for="scientific">kelvin</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <div id="results">
+
+      <div id="weather-animations"> 
+        <dotlottie-player src="https://lottie.host/cad0b85e-9294-451e-8801-7315b16693b0/Spls78Gxh9.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+      </div>
+
+      <div id="results-container" class=".displayNone"> 
+        <h2 id="results-title"></h2>
+        <h4 id="results-timezone"></h4>
+        <h4 id="results-time"></h4>
+        <p id="results-forecast"></p>
+      </div>
+      <div id="results-icon"></div>
+    </div>
+    </section>
+  </main>
+  {{>footer}}
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
