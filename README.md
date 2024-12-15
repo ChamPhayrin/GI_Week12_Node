@@ -9,3 +9,14 @@ WeatherApp is a simple and user-friendly weather application that allows users t
 
 ## Demo
 https://gi-week12-node.vercel.app/
+
+## Technologies Used
+
+This project is built using the following technologies:
+
+- **HTML**: Used for structuring the content of the web pages.
+- **CSS**: Used for styling the content and layout of the website.
+- **SASS**: A CSS preprocessor that allows for better organization and more powerful styling features like variables, mixins, and nesting.
+- **JavaScript (JS)**: Adds interactivity and dynamic behavior to the website.
+- **Node.js**: A JavaScript runtime environment used for server-side development. It powers the backend of the application.
+
